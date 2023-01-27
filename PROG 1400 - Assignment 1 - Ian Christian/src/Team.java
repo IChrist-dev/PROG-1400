@@ -17,8 +17,8 @@ public class Team {
     //Constructor
     public Team(String teamName) {
         this.teamName = teamName;
-        /*Random number 0-100,000 cannot be modified once the
-        team object is created*/
+
+        //Random number 0-100,000 cannot be accessed except when creating Team object
         this.budget = 100000 * Math.random();
     }
 
