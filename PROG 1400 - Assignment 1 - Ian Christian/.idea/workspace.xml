@@ -29,15 +29,15 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "D:/NSCC Programming Classes/PROG 1400 - Intro to OOP/Assignments/PROG 1400 - Assignment 1 - Ian Christian",
-    "settings.editor.selected.configurable": "project.propVCSSupport.DirectoryMappings"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;last_opened_file_path&quot;: &quot;D:/NSCC Programming Classes/PROG 1400 - Intro to OOP/Assignments/PROG 1400 - Assignment 1 - Ian Christian&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;project.propVCSSupport.DirectoryMappings&quot;
   }
-}]]></component>
+}</component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -51,6 +51,10 @@
       <workItem from="1674752379543" duration="4928000" />
       <workItem from="1674778273717" duration="5660000" />
       <workItem from="1674785038625" duration="78000" />
+      <workItem from="1674822659023" duration="1571000" />
+      <workItem from="1674829793204" duration="345000" />
+      <workItem from="1674859546099" duration="2529000" />
+      <workItem from="1674862728638" duration="6888000" />
     </task>
     <servers />
   </component>

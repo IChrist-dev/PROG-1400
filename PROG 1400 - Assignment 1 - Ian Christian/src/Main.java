@@ -20,10 +20,11 @@ public class Main {
                 "================================");
 
         //Loop to receive each team's details from the user then add to the list
-        for (int i=1; i<=3; i++) {
-            System.out.println("Enter name for team #" + i + ":");
-            String tempTeamName = scan.nextLine();
-            Team tempTeam = new Team(tempTeamName);
+        for (int i=0; i<3; i++) {
+            System.out.println("Enter name for team #" + (i+1) + ":");
+//            String tempTeamName = scan.nextLine();
+
+            Team tempTeam = new Team(Validation.getValidTeamName());
             teamsObjectsList.add(tempTeam);
         }
 
@@ -33,17 +34,19 @@ public class Main {
         //Add each player's info to each team using nested loop
         for (Team tempTeam : teamsObjectsList) {
             System.out.println("Enter players for " + tempTeam.getTeamName() + ":");
-            for (int j=1; j<=3; j++) {
+            for (int j=0; j<3; j++) {
+                int tempGoals;
+                int tempAssists;
+
                 //Collecting individual info
-                System.out.println("Enter name for player #" + j + ":");
+                System.out.println("Enter name for player #" + (j+1) + ":");
                 String tempPlayerName = scan.nextLine();
 
                 System.out.println("Enter number of goals for " + tempPlayerName + ":");
-                int tempGoals = scan.nextInt();
+                tempGoals = Validation.getValidInput();
 
                 System.out.println("Enter number of assists for " + tempPlayerName + ":");
-                int tempAssists = scan.nextInt();
-                scan.nextLine(); //catch trailing blank-space
+                tempAssists = Validation.getValidInput();
 
                 //Create a player object with previous inputs
                 Player tempPlayer = new Player(tempPlayerName, tempGoals, tempAssists);

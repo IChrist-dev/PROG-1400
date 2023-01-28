@@ -4,6 +4,7 @@ Assignment 1
 Ian Christian
 w0480449
 */
+
 import java.lang.Math;
 import java.util.ArrayList;
 

@@ -19,7 +19,6 @@ public class Player {
     }
 
     //Getters
-    public String getPlayerName() {return playerName;}
     public int getGoalsNum() {return goals;}
     public int getAssistsNum() {return assists;}
 
@@ -32,10 +31,7 @@ public class Player {
         String formatGoalTotal = String.format("%-10s", "G - " + this.goals);
         String formatAssistTotal = String.format("%-10s", "A - " + this.assists);
         String formatPlayerTotal = String.format("%s %-10s","Total -", playerTotal);
-
-
         System.out.println(formatPlayerName + formatGoalTotal + formatAssistTotal +
                 formatPlayerTotal);
-        //System.out.println(this.playerName + ": " + "G - " + this.goals + " A - " + this.assists);
     }
 }
