@@ -44,7 +44,7 @@ public class Validation {
         String teamName;
         String potentialName = scan.nextLine();
         while (potentialName.length() > 20) {
-            System.out.println("That name is too long. Please try again:");
+            System.out.println("Name must be under 20 characters. Please try again:");
             potentialName = scan.nextLine();
         }
         teamName = potentialName;
