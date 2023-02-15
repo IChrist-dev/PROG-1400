@@ -11,10 +11,9 @@ public class Animal {
     //region Constructors
     //Default constructor
     public Animal() {
-        species = "Not yet specified";
-        maxWeight = 9999;
-        habitat = "Not yet specified";
-        isEndangered = false;
+        this.species = "Not yet specified";
+        this.habitat = "Not yet specified";
+        this.isEndangered = false;
     }
 
     //Parameterized constructor
@@ -78,13 +77,17 @@ public class Animal {
     }
 
     //Method for the animal to report its state
-    public String reportState() {
-        if (this.isEndangered) {
-            return "I am a " + Integer.toString(this.maxWeight) + "lb " + this.species +
-                    " that lives in the " + this.habitat + ". I am an endangered species.";
-        } else {
-            return "I am a " + this.maxWeight + "lb " + this.species + " that lives in the " +
-                    this.habitat + ". I am not an endangered species.";
+    @Override
+    public String toString() {
+        String output = "I am a " + this.maxWeight + "lb " + this.species +
+                " that lives in the " + this.habitat + ". I ";
+        String am = "am";
+
+        if (!this.isEndangered) {
+            am += " not";
         }
+        output += am + " an endangered species.";
+
+        return output;
     }
 }

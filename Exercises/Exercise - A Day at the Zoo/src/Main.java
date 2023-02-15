@@ -8,14 +8,14 @@ public class Main {
 
         Animal[] zoo = {cowB, tiger, chicken};
 
-        for (Animal i : zoo) {
-            System.out.println(i.feed());        //Feed the animal
-            System.out.println(i.makeSound());   //The animal makes a noise
-            System.out.println(i.reportState() + "\n"); //The animal somehow speaks English
+        for (int i=0; i<zoo.length; i++) {
+            System.out.println(zoo[i].feed());        //Feed the animal
+            System.out.println(zoo[i].makeSound());   //The animal makes a noise
+            System.out.println(zoo[i] + "\n"); //The animal somehow speaks English
         }
 
         tiger.setEndangered(false);
         System.out.println("Conservationist efforts have paid off. Tigers populations are increasing! \n" +
-                tiger.reportState());
+                tiger.toString());
     }
 }
