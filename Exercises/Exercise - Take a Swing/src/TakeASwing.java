@@ -62,8 +62,6 @@ public class TakeASwing extends JFrame {
         //region Controls added to container
         mainPage.add(leftButton);
         mainPage.add(rightButton);
-        mainPage.add(leftButton);
-        mainPage.add(rightButton);
         mainPage.add(leftPanel);
         mainPage.add(rightPanel);
         mainPage.setVisible(true);
