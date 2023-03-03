@@ -11,8 +11,12 @@ import java.awt.event.ActionEvent;
 public class TakeASwing extends JFrame {
 
     //Class-global variables for panel. Scoped for action listener methods
-    JPanel leftPanel;
-    JPanel rightPanel;
+    //Following the March 3 class, learned that making the gui element global
+    //just so it's accessible by the action method is not preferable.
+    //better to keep elements local and either pass directly to the method,
+    //or declare the method locally as a lambda function.
+    private JPanel leftPanel;
+    private JPanel rightPanel;
 
     //Constructor for the JFrame
     public TakeASwing() {
