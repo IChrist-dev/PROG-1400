@@ -1,3 +1,9 @@
+/*
+PROG 1400 - Exercise - Ball Chaser
+Ian Christian
+w0480449
+*/
+
 import java.awt.*;
 
 public abstract class Shape {
@@ -36,6 +42,10 @@ public abstract class Shape {
         return shapeColor;
     }
 
-    //Abstract method declaration
+    //Abstract methods declaration
     public abstract void drawShape(Graphics pen);
+
+    public abstract void moveShape();
+
+    public abstract int increaseSpeed(int direction);
 }

@@ -1,4 +1,8 @@
-import sun.applet.Main;
+/*
+PROG 1400 - Exercise - Ball Chaser
+Ian Christian
+w0480449
+*/
 
 import javax.swing.*;
 import javax.swing.border.EmptyBorder;
@@ -11,6 +15,7 @@ public class MainWindow extends JFrame {
         //Establish general window parameters
         this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         this.setBounds(200, 200, 1000, 600);
+        this.setTitle("Exercise - Ball Chaser");
 
         JPanel mainPanel = new JPanel();
         mainPanel.setBorder(new EmptyBorder(10, 10, 10, 10));
